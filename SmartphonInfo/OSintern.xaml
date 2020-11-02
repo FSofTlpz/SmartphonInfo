@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:fsoftutil="clr-namespace:FSofTUtils.Xamarin.Control;assembly=SmartphonInfo"
+             x:Class="SmartphonInfo.OSinternPage"
+             BackgroundColor="#e8e8e8">
+   <ScrollView Orientation="Vertical" Padding="5">
+
+      <ScrollView Orientation="Horizontal" VerticalOptions="StartAndExpand">
+         <fsoftutil:SelectableLabel x:Name="outputInfo" 
+                                    Text="Info" 
+                                    Style="{StaticResource selectableLabel}"/>
+      </ScrollView>
+
+   </ScrollView>
+</ContentPage>

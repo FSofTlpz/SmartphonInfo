@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:fsoftutil="clr-namespace:FSofTUtils.Xamarin.Control;assembly=SmartphonInfo"
+             x:Class="SmartphonInfo.MainPage"
+             Title="Smartphon-Infos"
+             BackgroundColor="#e8e8e8">
+   <ScrollView Orientation="Vertical" Padding="5">
+
+      <StackLayout>
+         <Button x:Name="buttonSampleData" Text="Gerät neu abfragen" Clicked="buttonSampleData_Clicked"/>
+
+         <ScrollView Orientation="Horizontal">
+            <ScrollView Orientation="Vertical">
+               <fsoftutil:SelectableLabel x:Name="outputDevice" 
+                                          Text="Device" 
+                                          Style="{StaticResource selectableLabel}"/>
+            </ScrollView>
+         </ScrollView>
+
+         <ScrollView Orientation="Horizontal">
+            <ScrollView Orientation="Vertical">
+               <fsoftutil:SelectableLabel x:Name="outputDisplay" 
+                                          Text="Display" 
+                                          Style="{StaticResource selectableLabel}"/>
+            </ScrollView>
+         </ScrollView>
+
+         <ScrollView Orientation="Horizontal">
+            <ScrollView Orientation="Vertical">
+               <fsoftutil:SelectableLabel x:Name="labelBatteryInfo" 
+                                          Text="Batterie" 
+                                          Style="{StaticResource selectableLabel}"/>
+            </ScrollView>
+         </ScrollView>
+
+         <ScrollView Orientation="Horizontal">
+            <ScrollView Orientation="Vertical">
+               <fsoftutil:SelectableLabel x:Name="labelEnergySaverStatus" 
+                                          Text="Energiesparmodus" 
+                                          Style="{StaticResource selectableLabel}"/>
+            </ScrollView>
+         </ScrollView>
+
+         <Picker x:Name="pickerExtData" 
+                 Title="OS-spezifische Infos" 
+                 TextColor="Black"
+                 TitleColor="Black"
+                 SelectedIndexChanged="pickerExtData_SelectedIndexChanged"
+                 HorizontalOptions="StartAndExpand"/>
+
+         <ScrollView Orientation="Horizontal">
+            <ScrollView Orientation="Vertical">
+               <fsoftutil:SelectableLabel x:Name="labelBarometer" 
+                                          Text="Barometer" 
+                                          Style="{StaticResource selectableLabel}"/>
+            </ScrollView>
+         </ScrollView>
+
+         <ScrollView Orientation="Horizontal">
+            <ScrollView Orientation="Vertical">
+               <fsoftutil:SelectableLabel x:Name="labelCompass" 
+                                          Text="Kompass" 
+                                          Style="{StaticResource selectableLabel}"/>
+            </ScrollView>
+         </ScrollView>
+         
+         <ScrollView Orientation="Horizontal">
+            <ScrollView Orientation="Vertical">
+               <fsoftutil:SelectableLabel x:Name="labelConnectivity" 
+                                          Text="Netzwerk" 
+                                          Style="{StaticResource selectableLabel}"/>
+            </ScrollView>
+         </ScrollView>
+
+         <ScrollView Orientation="Horizontal">
+            <ScrollView Orientation="Vertical">
+               <fsoftutil:SelectableLabel x:Name="labelAccelerometer" 
+                                          Text="Beschleunigungsmesser" 
+                                          Style="{StaticResource selectableLabel}"/>
+            </ScrollView>
+         </ScrollView>
+
+         <ScrollView Orientation="Horizontal">
+            <ScrollView Orientation="Vertical">
+               <fsoftutil:SelectableLabel x:Name="labelMagneticField" 
+                                          Text="MagneticField" 
+                                          Style="{StaticResource selectableLabel}"/>
+            </ScrollView>
+         </ScrollView>
+
+         <ScrollView Orientation="Horizontal">
+            <ScrollView Orientation="Vertical">
+               <fsoftutil:SelectableLabel x:Name="labelAngularVelocity" 
+                                          Text="AngularVelocity" 
+                                          Style="{StaticResource selectableLabel}"/>
+            </ScrollView>
+         </ScrollView>
+
+         <ScrollView Orientation="Horizontal">
+            <ScrollView Orientation="Vertical">
+               <fsoftutil:SelectableLabel x:Name="labelOrientationSensor" 
+                                          Text="OrientationSensor" 
+                                          Style="{StaticResource selectableLabel}"/>
+            </ScrollView>
+         </ScrollView>
+
+         <Button x:Name="buttonLastKnownLocation" Text="letzte bekannte Position" Clicked="buttonLastKnownLocation_Clicked"/>
+         <ScrollView Orientation="Horizontal">
+            <ScrollView Orientation="Vertical">
+               <fsoftutil:SelectableLabel x:Name="outputLastKnownLocation" 
+                                                Text="LastKnownLocation" 
+                                                Style="{StaticResource selectableLabel}"/>
+            </ScrollView>
+         </ScrollView>
+
+         <Button x:Name="buttonLocation" Text="aktuelle Position" Clicked="buttonLocation_Clicked"/>
+         <ScrollView Orientation="Horizontal">
+            <ScrollView Orientation="Vertical">
+               <fsoftutil:SelectableLabel x:Name="outputLocation" 
+                                                Text="Location" 
+                                                Style="{StaticResource selectableLabel}"/>
+            </ScrollView>
+         </ScrollView>
+
+         <StackLayout Orientation="Horizontal">
+            <Button x:Name="buttonFlashlightOn" Text="Lampe an" Clicked="buttonFlashlightOn_Clicked"/>
+            <Button x:Name="buttonFlashlightOff" Text="Lampe aus" Clicked="buttonFlashlightOff_Clicked" IsEnabled="False"/>
+         </StackLayout>
+
+         <StackLayout Orientation="Horizontal">
+            <Button x:Name="buttonVibrationOn" Text="Vibration an" Clicked="buttonVibrationOn_Clicked"/>
+            <Button x:Name="buttonVibrationOff" Text="Vibration aus" Clicked="buttonVibrationOff_Clicked"/>
+         </StackLayout>
+
+
+      </StackLayout>
+   </ScrollView>
+
+</ContentPage>
